@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tcafe.FXMLDocumentController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <VBox spacing="20.0" style="-fx-background-color: #E0E0E0;" BorderPane.alignment="CENTER">
+         <children>
+            <Hyperlink fx:id="ProductManager" onAction="#clickProdct" text="Product Manager" />
+            <Hyperlink fx:id="OrderManager" layoutX="10.0" layoutY="10.0" onAction="#clickOrder" text="Order Manager" />
+            <Hyperlink fx:id="Statistical" layoutX="10.0" layoutY="39.0" onAction="#clickStatistical" text="Statistical" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <Pane fx:id="mainPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER_LEFT">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Label layoutX="267.0" layoutY="263.0" text="Welcome to TCafe" />
+         </children>
+      </Pane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" style="-fx-background-color: #EBEBEB;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="\@ copyright TCafe" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
